@@ -8,7 +8,6 @@ for f in $files; do
 	if [ $match -ne 1 ]; then
 		match2=$(echo $f | grep -c "csv")
 		if [ $match2 -eq 1 ]; then
-			echo $f
 			echo "The file $f doesn't match"
 			year_file=${f:0:4}
 			month_string=${f:5:2}
